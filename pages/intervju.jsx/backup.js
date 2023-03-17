@@ -7,7 +7,7 @@ import Shape from "../../images/kontakt/Vector_8.svg";
 // import Kontakt from "../../images/kontakt/people-laptop.svg";
 import Mobile from "../../images/kontakt/mobile.svg";
 
-import Questions from "./questions";
+import Questions from "../../components/questions";
 
 export default function Intervju() {
     return (

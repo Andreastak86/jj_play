@@ -1,8 +1,7 @@
-import Questions from "@/pages/intervju.jsx/questions";
-import { useState } from "react"
+import Questions from "@/components/questions";
+import { useState } from "react";
 
 export default function IntervjuNavBoxMobile({ prepareMob }) {
-
     const [preperationContent, setPreperationContent] = useState(true);
     const [whatIfContent, setWhatIfContent] = useState(false);
     const [fiveClassicsContent, setFiveClassicsContent] = useState(false);
@@ -17,7 +16,11 @@ export default function IntervjuNavBoxMobile({ prepareMob }) {
 
     return (
         <>
-            <div className={`flex flex-col content-center ${prepareMob ? "content" : "hidden"}`}>
+            <div
+                className={`flex flex-col content-center ${
+                    prepareMob ? "content" : "hidden"
+                }`}
+            >
                 <div className='mb-6 '>
                     <ul className='mx-auto text-2xl w-60 text-whit center'>
                         <li
@@ -81,7 +84,9 @@ export default function IntervjuNavBoxMobile({ prepareMob }) {
                         }`}
                     >
                         <div className='pb-8 ml-6 '>
-                            <h2 className="text-[22px]">Intervjuforberedelser</h2>
+                            <h2 className='text-[22px]'>
+                                Intervjuforberedelser
+                            </h2>
                             <h3 className='mt-4'>
                                 Å være godt forberedt gir bedre resultater!
                             </h3>
@@ -273,7 +278,9 @@ export default function IntervjuNavBoxMobile({ prepareMob }) {
                                 egentlig ønsker å jobbe et helt annet sted eller
                                 i en helt annen type stilling.
                             </p>
-                            <h2 className='py-4 text-[22px] '>5 Klassikere. Del 2</h2>
+                            <h2 className='py-4 text-[22px] '>
+                                5 Klassikere. Del 2
+                            </h2>
                             <h3 className='py-4 '>
                                 1. Hvorfor sluttet du i forrige jobb, evt.
                                 ønsker å forlate nåværende jobb? (spm.2)
@@ -348,7 +355,9 @@ export default function IntervjuNavBoxMobile({ prepareMob }) {
                         }`}
                     >
                         <div className='pb-8 ml-6 '>
-                            <h2 className="text-[22px]">Spørsmål du kan stille selv</h2>
+                            <h2 className='text-[22px]'>
+                                Spørsmål du kan stille selv
+                            </h2>
                             <h3 className='py-4'>Om selskapet:</h3>
                             <p className='my-4'>
                                 Fortell meg litt mer om selskapet. Fortelle meg
@@ -408,5 +417,5 @@ export default function IntervjuNavBoxMobile({ prepareMob }) {
                 </div>
             </div>
         </>
-    )
+    );
 }

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import refQuestions from "@/pages/intervju.jsx/referenceQuestions";
+import refQuestions from "@/components/referenceQuestions";
 import Image from "next/image";
 
 import Approved from "../images/intervju/approved.png";
@@ -19,7 +19,11 @@ export default function ReferanserNavBoxMob({ referenceMob }) {
 
     return (
         <>
-            <div className={`flex flex-col ${referenceMob ? "content" : "hidden"}`}>
+            <div
+                className={`flex flex-col ${
+                    referenceMob ? "content" : "hidden"
+                }`}
+            >
                 <div>
                     <ul className='mx-auto text-2xl w-60 text-whit center'>
                         <li
@@ -90,23 +94,21 @@ export default function ReferanserNavBoxMob({ referenceMob }) {
                             </p>
                             <h3 className='mt-8'>Hvem bør man oppgi?</h3>
                             <p>
-                                <span className="font-medium">Primært:</span> 3 siste arbeidsgivere, hvis du har vært
-                                ute i arbeid en del år. <br />
-                                <span>Sekundært:</span> Kunder, eksterne samarbeidspartnere
-                                og leverandører.
+                                <span className='font-medium'>Primært:</span> 3
+                                siste arbeidsgivere, hvis du har vært ute i
+                                arbeid en del år. <br />
+                                <span>Sekundært:</span> Kunder, eksterne
+                                samarbeidspartnere og leverandører.
                             </p>
-                           
-                            <h3 className='mt-8'>
-                                Hvis du har vært en leder:
-                            </h3>
+
+                            <h3 className='mt-8'>Hvis du har vært en leder:</h3>
                             <p>
-                            – Overordnet.
+                                – Overordnet.
                                 <br />
-                            – Sideordnet.
-                                <br />
-                            – Noen du har vært leder for.
+                                – Sideordnet.
+                                <br />– Noen du har vært leder for.
                             </p>
-                            
+
                             <h3 className='mt-8 '>
                                 Hvis du bare har hatt én jobb:
                             </h3>
@@ -114,68 +116,95 @@ export default function ReferanserNavBoxMob({ referenceMob }) {
                                 <li>– Din overordnede.</li>
                                 <li>– Sideordnet klilega.</li>
                                 <li>– Veileder fra studier. .</li>
-                                <li>– Samarbeidspartnere i forbindelse med verv.</li>
-                                <li>– Noen du har vært trener/<br /> instruktør for.</li>
+                                <li>
+                                    – Samarbeidspartnere i forbindelse med verv.
+                                </li>
+                                <li>
+                                    – Noen du har vært trener/
+                                    <br /> instruktør for.
+                                </li>
                                 <li>– Venner.</li>
                             </ul>
-                           
+
                             <h3 className='mt-8 '>Hvis du er nyutdannet:</h3>
                             <ul>
-                                <li>– Leder fra sommerjobb eller deltidsjobb.</li>
+                                <li>
+                                    – Leder fra sommerjobb eller deltidsjobb.
+                                </li>
                                 <li>– Veileder fra studier.</li>
-                                <li>– Kontaktpersoner man har fra hobbyer/fritidsaktiviteter.</li>
+                                <li>
+                                    – Kontaktpersoner man har fra
+                                    hobbyer/fritidsaktiviteter.
+                                </li>
                                 <li>– Venner.</li>
                             </ul>
-                           
+
                             <h3 className='mt-8 '>
                                 Kontrollér bruken av dine referanser.
                             </h3>
                             <ul>
-                                <li>– Spør{" "}
-                                    <span className='font-bold'>
-                                        hva slags
-                                    </span>{" "}
+                                <li>
+                                    – Spør{" "}
+                                    <span className='font-bold'>hva slags</span>{" "}
                                     referanser de vil ha.
                                 </li>
-                                <li>– Finn ut{" "}
+                                <li>
+                                    – Finn ut{" "}
                                     <span className='font-bold '>når</span>{" "}
                                     referansene blir kontaktet.
                                 </li>
-                                <li>– Finn ut{" "}
+                                <li>
+                                    – Finn ut{" "}
                                     <span className='font-bold '>hvem</span> de
                                     blir kontatktet av.
                                 </li>
-                                <li>– Ikke oppgi referanser i CV med mindre du
+                                <li>
+                                    – Ikke oppgi referanser i CV med mindre du
                                     blir bedt om det.
                                 </li>
-                                <li>– Ikke utsett dine referansepersoner for å bli
-                                    kontaktet for ofte.
+                                <li>
+                                    – Ikke utsett dine referansepersoner for å
+                                    bli kontaktet for ofte.
                                 </li>
                             </ul>
-                           
+
                             <h3 className='mt-8'>Forbered dine referanser.</h3>
                             <p>
-                                Jo bedre du kan forberede dine referanser, <br />jo
-                                bedre kan de selge deg inn. </p> 
-                                
-                               <h3 className="mt-8"> Informasjon om stilling:</h3>
-                                <p>
-                                Arbeidsoppgaver/ansvarsfelt/<br/>utviklingsmuligheter.
+                                Jo bedre du kan forberede dine referanser,{" "}
+                                <br />
+                                jo bedre kan de selge deg inn.{" "}
+                            </p>
+
+                            <h3 className='mt-8'> Informasjon om stilling:</h3>
+                            <p>
+                                Arbeidsoppgaver/ansvarsfelt/
+                                <br />
+                                utviklingsmuligheter.
                             </p>
                             <ul>
-                                <li>– Hva du har vektlagt når du har ”solgt deg inn”.</li>
+                                <li>
+                                    – Hva du har vektlagt når du har ”solgt deg
+                                    inn”.
+                                </li>
 
-                                <li>– Arbeidsoppgaver du har vektlagt med relevans for stillingen.</li>
+                                <li>
+                                    – Arbeidsoppgaver du har vektlagt med
+                                    relevans for stillingen.
+                                </li>
 
-                                <li>– Hvilke usikkerhetsmomenter den som ringer
-                                    har i f.t. deg som kandidat. </li>
+                                <li>
+                                    – Hvilke usikkerhetsmomenter den som ringer
+                                    har i f.t. deg som kandidat.{" "}
+                                </li>
 
-                                <li>– Styrker og svakheter du selv har påpekt.</li>
+                                <li>
+                                    – Styrker og svakheter du selv har påpekt.
+                                </li>
 
                                 <li>– Når du tror de vil bli kontaktet.</li>
 
                                 <li>– Hvem de vil bli kontaktet av.</li>
-                                
+
                                 <li>– Hvorfor du har lyst på jobben.</li>
                             </ul>
                         </div>
@@ -187,7 +216,8 @@ export default function ReferanserNavBoxMob({ referenceMob }) {
                     >
                         <div className='pb-8'>
                             <h2 className='my-4 text-[22px] '>
-                                Spørsmål som dine referanse-personer <br />kan få
+                                Spørsmål som dine referanse-personer <br />
+                                kan få
                             </h2>
                             <div>
                                 <ul className='flex flex-col gap-3 text-black '>
@@ -198,8 +228,7 @@ export default function ReferanserNavBoxMob({ referenceMob }) {
                             </div>
                         </div>
                     </section>
-                    
-                    
+
                     <section
                         className={`mx-3 xxs:mx-1 xs:mx-0 ${
                             fiveClassicsContent ? "content" : "hidden"

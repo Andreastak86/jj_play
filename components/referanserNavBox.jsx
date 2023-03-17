@@ -1,5 +1,5 @@
 import { useState } from "react";
-import refQuestions from "@/pages/intervju.jsx/referenceQuestions";
+import refQuestions from "@/components/referenceQuestions";
 import Image from "next/image";
 
 import Approved from "../images/intervju/approved.png";
@@ -78,7 +78,7 @@ export default function IntervjuNavBox({ reference }) {
                             <h2 className='mt-8'>
                                 Hvorfor er referansepersoner viktig?
                             </h2>
-                            <p className="mt-2">
+                            <p className='mt-2'>
                                 Referanser oppfattes som det beste informasjons
                                 grunnlaget for fremtidig jobb-suksess.
                                 <br />
@@ -97,10 +97,8 @@ export default function IntervjuNavBox({ reference }) {
                                 Sekundært: Kunder, eksterne samarbeidspartnere
                                 og leverandører.
                             </p>
-                            
-                            <h3 className='mt-8'>
-                                Hvis du har vært en leder:
-                            </h3>
+
+                            <h3 className='mt-8'>Hvis du har vært en leder:</h3>
                             <ul>
                                 <li>Overordnet.</li>
                                 <li>Sideordnet.</li>
@@ -110,23 +108,28 @@ export default function IntervjuNavBox({ reference }) {
                             <h3 className='mt-8'>
                                 Hvis du bare har hatt én jobb:
                             </h3>
-                           
+
                             <ul>
                                 <li>Din overordnede.</li>
                                 <li>Sideordnet klilega.</li>
                                 <li>Veileder fra studier. .</li>
-                                <li> Samarbeidspartnere i forbindelse med verv. </li>
+                                <li>
+                                    {" "}
+                                    Samarbeidspartnere i forbindelse med verv.{" "}
+                                </li>
                                 <li>Noen du har vært trener/instruktør for.</li>
                                 <li>Venner.</li>
                             </ul>
-                            
+
                             <h3 className='mt-8'>Hvis du er nyutdannet:</h3>
                             <ul>
                                 <li>Leder fra sommerjobb eller deltidsjobb.</li>
                                 <li>Veileder fra studier.</li>
-                                <li>Kontaktpersoner man har fra hobbyer/fritidsaktiviteter.</li>
+                                <li>
+                                    Kontaktpersoner man har fra
+                                    hobbyer/fritidsaktiviteter.
+                                </li>
                                 <li>Evt. venner.</li>
-                            
                             </ul>
                             <h3 className='mt-8'>
                                 Kontrollér bruken av dine referanser.
@@ -166,14 +169,22 @@ export default function IntervjuNavBox({ reference }) {
                                 stilling:
                                 arbeidsoppgaver/ansvarsfelt/utviklingsmuligheter.
                             </p>
-                            <ul className="mt-4">
-                                <li>– Hva du har vektlagt når du har ”solgt deg
-                                    inn”.</li>
-                                <li>– Arbeidsoppgaver du har vektlagt med relevans
-                                    for stillingen. </li>
-                                <li>– Hvilke usikkerhetsmomenter den som ringer
-                                    har i f.t. deg som kandidat.</li>
-                                <li>– Styrker og svakheter du selv har påpekt.</li>
+                            <ul className='mt-4'>
+                                <li>
+                                    – Hva du har vektlagt når du har ”solgt deg
+                                    inn”.
+                                </li>
+                                <li>
+                                    – Arbeidsoppgaver du har vektlagt med
+                                    relevans for stillingen.{" "}
+                                </li>
+                                <li>
+                                    – Hvilke usikkerhetsmomenter den som ringer
+                                    har i f.t. deg som kandidat.
+                                </li>
+                                <li>
+                                    – Styrker og svakheter du selv har påpekt.
+                                </li>
                                 <li>– Når du tror de vil bli kontaktet.</li>
                                 <li>– Hvem de vil bli kontaktet av.</li>
                                 <li>– Hvorfor du har lyst på jobben.</li>

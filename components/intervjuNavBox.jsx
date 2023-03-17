@@ -1,4 +1,4 @@
-import Questions from "@/pages/intervju.jsx/questions";
+import Questions from "@/components/questions";
 import { useState } from "react";
 
 export default function IntervjuNavBox({ prepare }) {
